@@ -1,0 +1,13 @@
+{
+     "configurations": 
+     [
+          {
+               "type": "java",
+               "name": "App",
+               "request": "launch",
+               "mainClass": "controllers/controllers.App",
+               "projectName": "practica_02_construccion",
+               "vmArgs": "--enable-native-access=javafx.graphics"
+          }
+     ]
+}
