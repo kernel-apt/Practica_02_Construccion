@@ -6,14 +6,16 @@
                "name": "DesignPattern",
                "request": "launch",
                "mainClass": "design_patterns.DesignPattern",
-               "projectName": "practica_02_construccion"
+               "projectName": "practica_02_construccion",
+               "vmArgs": "--enable-preview -XX:+ShowCodeDetailsInExceptionMessages"
           },
           {
                "type": "java",
                "name": "DesignPattern",
                "request": "launch",
                "mainClass": "design_patterns/design_patterns.DesignPattern",
-               "projectName": "practica_02_construccion"
+               "projectName": "practica_02_construccion",
+               "vmArgs": "--enable-preview -XX:+ShowCodeDetailsInExceptionMessages"
           }
      ]
 }

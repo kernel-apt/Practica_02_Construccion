@@ -20,12 +20,11 @@ public class LogNotification extends BaseNotification
           System.out.println("\n------------------------ Log ------------------------ ");
           
           servicioNotificacion.enviarNotificacion(destinatario, mensaje);
-          LocalDate fecha = LocalDate.now();
           
           System.out.println
           (
-               "\nFecha: " + fecha +  
-               "\nHora: " + fecha.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
+               // "\nFecha: " + fecha +  
+               "\nHora: " + LocalDate.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
           );
 
           System.out.println("------------------------ Log ------------------------ \n");
