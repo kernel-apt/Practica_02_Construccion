@@ -28,6 +28,6 @@ public class MultiChannelNotifier extends BaseNotification
      @Override
      public String obtenerServicio() 
      {
-          return "MultiChannelNotifier";
+          return "Notificacion Multicanal";
      }
 }
