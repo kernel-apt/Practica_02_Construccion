@@ -1,32 +1,77 @@
-<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>50</x><y>30</y><w>460</w><h>140</h></coordinates><panel_attributes>fontsize=18
+<diagram program="umletino" version="15.1"><zoom_level>10</zoom_level><help_text></help_text><element><id>UMLClass</id><coordinates><x>720</x><y>625</y><w>530</w><h>140</h></coordinates><panel_attributes>fontsize=18
 &lt;&lt;interface&gt;&gt;
 ServicioNotificacion
 --
 
 --
-+enviar(String destinatario, String mensaje): void
-+obtenerEstado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>330</y><w>560</w><h>140</h></coordinates><panel_attributes>fontsize=18
+/+enviarNotificacion(String destinatario, String mensaje): void/
+/+obtenerEstado(): String/</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>345</y><w>560</w><h>110</h></coordinates><panel_attributes>fontsize=18
 NotificationSMS
 --
 +NotificationSMS(ServicioNotificacion servicioNotificacion): void
 --
-+enviar(String destinatario, String mensaje): void
-+obtenerEstado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>500</y><w>560</w><h>140</h></coordinates><panel_attributes>fontsize=18
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>515</y><w>560</w><h>110</h></coordinates><panel_attributes>fontsize=18
 NotificationPush
 --
-
++NotificationPush(ServicioNotificacion servicioNotificacion): void
 --
-+enviar(String destinatario, String mensaje): void
-+obtenerEstado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>20</x><y>670</y><w>560</w><h>140</h></coordinates><panel_attributes>fontsize=18
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>685</y><w>560</w><h>110</h></coordinates><panel_attributes>fontsize=18
 NotificationEmail
 --
++NotificationEmail(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>700</x><y>845</y><w>580</w><h>120</h></coordinates><panel_attributes>fontsize=18
+/BaseNotificacion/
+--
 
---
-+enviar(String destinatario, String mensaje): void
-+obtenerEstado()</panel_attributes><additional_attributes></additional_attributes></element><element><id>UMLClass</id><coordinates><x>730</x><y>210</y><w>580</w><h>140</h></coordinates><panel_attributes>fontsize=18
-/ServicioNotificacion/
---
 #servicioNotificacion: ServicioNotificacion
 --
-+ServicioNotificacion(ServicioNotificacion servicioNotificacion): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>500</x><y>100</y><w>490</w><h>130</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;470;10;470;110</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>260</y><w>180</w><h>170</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;60;10;60;150;10;150</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>260</y><w>180</w><h>330</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>160;10;60;10;60;310;10;310</additional_attributes></element><element><id>Relation</id><coordinates><x>570</x><y>260</y><w>180</w><h>500</h></coordinates><panel_attributes>lt=&lt;&lt;-
-</panel_attributes><additional_attributes>160;10;60;10;60;480;10;480</additional_attributes></element></diagram>
++ServicioNotificacion(ServicioNotificacion servicioNotificacion): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>960</x><y>755</y><w>30</w><h>110</h></coordinates><panel_attributes>lt=&lt;.</panel_attributes><additional_attributes>10;10;10;90</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>415</y><w>170</w><h>530</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;510;50;510;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>575</y><w>170</w><h>370</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>150;350;50;350;50;10;10;10</additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>745</y><w>170</w><h>200</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>150;180;50;180;50;10;10;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>0</x><y>855</y><w>560</w><h>110</h></coordinates><panel_attributes>fontsize=18
+LogNotification
+--
++LogNotification(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>550</x><y>905</y><w>170</w><h>40</h></coordinates><panel_attributes>lt=&lt;&lt;-
+</panel_attributes><additional_attributes>150;20;10;20</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1380</x><y>335</y><w>600</w><h>110</h></coordinates><panel_attributes>fontsize=18
+EncryptedNotification
+--
++EncriptedNotification(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1270</x><y>375</y><w>130</w><h>560</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;540;70;540;70;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1380</x><y>485</y><w>600</w><h>110</h></coordinates><panel_attributes>fontsize=18
+PrioritaryNotification
+--
++PrioritaryNotification(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1270</x><y>525</y><w>130</w><h>410</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;390;70;390;70;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1380</x><y>635</y><w>600</w><h>110</h></coordinates><panel_attributes>fontsize=18
+RetryNotification
+--
++RetryNotification(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1270</x><y>675</y><w>130</w><h>260</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;240;70;240;70;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>1380</x><y>785</y><w>600</w><h>110</h></coordinates><panel_attributes>fontsize=18
+MultiChannelNotifier
+--
++MultiChannelNotifier(ServicioNotificacion servicioNotificacion): void
+--
++enviarNotificacion(String destinatario, String mensaje): void
++obtenerEstado(): String</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>1270</x><y>845</y><w>130</w><h>90</h></coordinates><panel_attributes>lt=&lt;&lt;-</panel_attributes><additional_attributes>10;70;70;70;70;10;110;10</additional_attributes></element><element><id>UMLClass</id><coordinates><x>720</x><y>335</y><w>540</w><h>200</h></coordinates><panel_attributes>fontsize=18
+GestorPedidos
+--
+-private servicio: ServicioNotificacion
+
+--
++GestorPedidos(ServicioNotificacion servicioNotificacion): void
+
+--
++asignarRepartidor(String repartidor, String direccion): void
+
++confirmarPedido(String cliente, String detalles): void
+
++notificarEntrega(String cliente): void</panel_attributes><additional_attributes></additional_attributes></element><element><id>Relation</id><coordinates><x>954</x><y>525</y><w>30</w><h>120</h></coordinates><panel_attributes>lt=&lt;-</panel_attributes><additional_attributes>10;100;10;10</additional_attributes></element></diagram>
