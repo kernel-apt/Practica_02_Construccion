@@ -4,16 +4,15 @@ import java.util.List;
 
 /**
  * Clase que implementa un notificador que utiliza múltiples canales de notificación.
- * Esta clase extiende de BaseNotification y utiliza el patrón Decorator para
- * agregar funcionalidad adicional a un servicio de notificación existente.
+ * Implementa la interfaz ServicioNotificacion y delega la tarea de enviar  notificaciones
  */
-public class MultiChannelNotifier extends BaseNotification
+public class MultiChannelNotifier implements ServicioNotificacion
 {
      private List<ServicioNotificacion> notificationChannels;
 
-     public MultiChannelNotifier(ServicioNotificacion servicioNotificacion) 
+     public MultiChannelNotifier(List<ServicioNotificacion> servicioNotificacion) 
      {
-          super(servicioNotificacion);
+          this.notificationChannels = servicioNotificacion;
      }
 
      @Override
