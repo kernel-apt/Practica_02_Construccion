@@ -5,6 +5,13 @@
                "type": "java",
                "name": "DesignPattern",
                "request": "launch",
+               "mainClass": "DesignPattern",
+               "projectName": "practica_02_construccion"
+          },
+          {
+               "type": "java",
+               "name": "DesignPattern",
+               "request": "launch",
                "mainClass": "design_patterns.DesignPattern",
                "projectName": "practica_02_construccion",
                "vmArgs": "--enable-preview -XX:+ShowCodeDetailsInExceptionMessages"

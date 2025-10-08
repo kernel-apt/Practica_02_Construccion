@@ -1,5 +1,3 @@
-package design_patterns;
-
 public interface ServicioNotificacion 
 {
      /**
@@ -8,11 +6,11 @@ public interface ServicioNotificacion
       * @param destinatario
       * @param mensaje
       */
-     void enviarNotificacion(String destinatario, String mensaje);
+     abstract void enviarNotificacion(String destinatario, String mensaje);
 
      /**
       * Regresa el nombre del servicio de notificación.
-      * @return
+      * @return nombre del servicio
       */
-     String obtenerServicio();
+     abstract String obtenerServicio();
 }
