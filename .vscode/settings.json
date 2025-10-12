@@ -9,5 +9,7 @@
      "editor.inlineSuggest.fontFamily": "Comic Sans MS",
      "terminal.integrated.fontFamily": "monospace",
      "notebook.output.fontFamily": "Comic Sans MS",
-     "editor.fontFamily": "Comic Sans MS, Quick Sand"
+     "editor.fontFamily": "Comic Sans MS, Quick Sand",
+     "workbench.preferredDarkColorTheme": "Monokai",
+     "terminal.integrated.cursorStyle": "line"
 }
