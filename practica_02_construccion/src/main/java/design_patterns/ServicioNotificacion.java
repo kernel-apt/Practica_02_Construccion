@@ -1,3 +1,5 @@
+package design_patterns;
+
 public interface ServicioNotificacion 
 {
      /**

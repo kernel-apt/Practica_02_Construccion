@@ -1,5 +1,13 @@
 {
      "java.compile.nullAnalysis.mode": "automatic",
      "java.debug.settings.onBuildFailureProceed": true,
-     "java.configuration.updateBuildConfiguration": "automatic"
+     "java.configuration.updateBuildConfiguration": "automatic",
+     "editor.fontSize": 17,
+     "chat.editor.fontSize": 20,
+     "editor.codeLensFontSize": 18,
+     "editor.minimap.sectionHeaderFontSize": 16,
+     "editor.inlineSuggest.fontFamily": "Comic Sans MS",
+     "terminal.integrated.fontFamily": "monospace",
+     "notebook.output.fontFamily": "Comic Sans MS",
+     "editor.fontFamily": "Comic Sans MS, Quick Sand"
 }
