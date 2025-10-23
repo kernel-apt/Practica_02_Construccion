@@ -8,11 +8,11 @@ import java.util.List;
  */
 public class MultiChannelNotifier implements ServicioNotificacion
 {
-     private List<ServicioNotificacion> notificationChannels;
+     private List<ServicioNotificacion> serviceNotifications;
 
-     public MultiChannelNotifier(List<ServicioNotificacion> servicioNotificacion) 
+     public MultiChannelNotifier(List<ServicioNotificacion> notificationsList) 
      {
-          this.notificationChannels = servicioNotificacion;
+          serviceNotifications = notificationsList;
      }
 
      @Override

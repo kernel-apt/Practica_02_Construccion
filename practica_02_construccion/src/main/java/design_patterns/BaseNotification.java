@@ -4,8 +4,8 @@ public abstract class BaseNotification implements ServicioNotificacion
 {
      protected ServicioNotificacion servicioNotificacion;
 
-     public BaseNotification(ServicioNotificacion servicioNotificacion)
+     public BaseNotification()
      {
-          this.servicioNotificacion = servicioNotificacion;
+          this.servicioNotificacion = notification;
      }
 }

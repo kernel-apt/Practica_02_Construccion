@@ -1,13 +1,15 @@
 package design_patterns;
 
+import javax.management.Notification;
+
 /**
  * Añade funcionalidad de reintento a las notificaciones.
  */
 public class RetryNotification extends BaseNotification
 {
-     public RetryNotification(ServicioNotificacion servicioNotificacion) 
+     public RetryNotification(Notification notification) 
      {
-          super(servicioNotificacion);
+          super(notification);
      }
 
      @Override
