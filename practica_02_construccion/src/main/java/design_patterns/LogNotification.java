@@ -1,7 +1,7 @@
 package design_patterns;
 
 import java.time.format.DateTimeFormatter;
-import java.time.LocalDate;
+import java.time.LocalDateTime;
 
 /**
  * Clase implementa la decoracion de notificaciones con log
@@ -23,7 +23,7 @@ public class LogNotification extends BaseNotification
           
           System.out.println
           (
-               "\nHora de envio: " + LocalDate.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
+               "\nHora de envio: " + LocalDateTime.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
           );
 
           System.out.println("------------------------ Log ------------------------ \n");
