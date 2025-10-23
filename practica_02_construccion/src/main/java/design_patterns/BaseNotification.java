@@ -2,10 +2,10 @@ package design_patterns;
 
 public abstract class BaseNotification implements ServicioNotificacion
 {
-     protected ServicioNotificacion servicioNotificacion;
+     protected ServicioNotificacion notificationService;
 
-     public BaseNotification()
+     public BaseNotification(ServicioNotificacion notificationService)
      {
-          this.servicioNotificacion = notification;
+          this.notificationService = notificationService;
      }
 }

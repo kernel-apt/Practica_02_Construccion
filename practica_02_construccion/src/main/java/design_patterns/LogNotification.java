@@ -1,30 +1,29 @@
 package design_patterns;
 
-import java.time.LocalDate;
 import java.time.format.DateTimeFormatter;
+import java.time.LocalDate;
 
 /**
  * Clase implementa la decoracion de notificaciones con log
  */
 public class LogNotification extends BaseNotification
 {
-     public LogNotification(ServicioNotificacion servicioNotificacion) 
+     public LogNotification(Notification notification) 
      {
-          super(servicioNotificacion);
+          super(notification);
      }
 
      @Override
      public void enviarNotificacion(String destinatario, String mensaje) 
      {
-          System.out.println("\n---------> Enviando notificación con log <----------");
+          System.out.println("\n---------> Se activa notificación con log <----------");
           System.out.println("\n------------------------ Log ------------------------ ");
           
-          servicioNotificacion.enviarNotificacion(destinatario, mensaje);
+          notificationService.enviarNotificacion(destinatario, mensaje);
           
           System.out.println
           (
-               // "\nFecha: " + fecha +  
-               "\nHora: " + LocalDate.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
+               "\nHora de envio: " + LocalDate.now().format(DateTimeFormatter.ofPattern("HH:mm:ss a"))
           );
 
           System.out.println("------------------------ Log ------------------------ \n");

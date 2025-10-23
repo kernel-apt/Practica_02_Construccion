@@ -14,7 +14,7 @@ public class Notification implements ServicioNotificacion
     @Override
     public void enviarNotificacion(String destinatario, String mensaje) 
     {
-        System.out.println("\n --- Se manda notificacion --- \n");
+        System.out.println("\n --- Enviando Notificacion --- \n");
     }
 
     @Override

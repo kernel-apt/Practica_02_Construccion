@@ -4,7 +4,7 @@ import java.util.List;
 
 /**
  * Clase que implementa un notificador que utiliza múltiples canales de notificación.
- * Implementa la interfaz ServicioNotificacion y delega la tarea de enviar  notificaciones
+ * Implementa la interfaz ServicioNotificacion y delega la tarea de enviar notificaciones
  */
 public class MultiChannelNotifier implements ServicioNotificacion
 {
@@ -18,7 +18,8 @@ public class MultiChannelNotifier implements ServicioNotificacion
      @Override
      public void enviarNotificacion(String destinatario, String mensaje) 
      {
-          for (ServicioNotificacion channel : notificationChannels) 
+          System.out.println("\n ***** Enviando notificaciones por todos los canales \n");
+          for (ServicioNotificacion channel : serviceNotifications) 
           {
                channel.enviarNotificacion(destinatario, mensaje);
           }
@@ -28,5 +29,10 @@ public class MultiChannelNotifier implements ServicioNotificacion
      public String obtenerServicio() 
      {
           return "Notificacion Multicanal";
+     }
+
+     public List<ServicioNotificacion> getServiceNotifications() 
+     {
+         return serviceNotifications;
      }
 }
