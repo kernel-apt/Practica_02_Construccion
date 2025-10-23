@@ -1,6 +1,6 @@
 package design_patterns;
 
-public class GestorPedidos 
+public class GestorPedidos
 {
      private ServicioNotificacion servicio;
 

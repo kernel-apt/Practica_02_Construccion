@@ -11,5 +11,6 @@
      "notebook.output.fontFamily": "Comic Sans MS",
      "editor.fontFamily": "Comic Sans MS, Quick Sand",
      "workbench.preferredDarkColorTheme": "Monokai",
-     "terminal.integrated.cursorStyle": "line"
+     "terminal.integrated.cursorStyle": "line",
+     "java.jdt.ls.vmargs": "-XX:+UseParallelGC -XX:GCTimeRatio=4 -XX:AdaptiveSizePolicyWeight=90 -Dsun.zip.disableMemoryMapping=true -Xmx4G -Xms100m -Xlog:disable"
 }
