@@ -32,6 +32,6 @@ public class LogNotification extends BaseNotification
      @Override
      public String obtenerServicio() 
      {
-          return "Notificación con Log";
+          return notificationService.obtenerServicio() + " con Log";
      }
 }

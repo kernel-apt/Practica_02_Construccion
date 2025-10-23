@@ -40,4 +40,9 @@ public class PackageManager
                "Hola " + cliente, "Tu pedido ha sido entregado."
           );
      }
+
+     public MultiChannelNotifier getMultiChannelNotifier() 
+     {
+          return multiChannelNotifier;
+     }
 }

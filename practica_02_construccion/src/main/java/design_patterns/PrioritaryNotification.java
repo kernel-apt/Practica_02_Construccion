@@ -5,9 +5,9 @@ package design_patterns;
  */
 public class PrioritaryNotification extends BaseNotification
 {
-     public PrioritaryNotification(ServicioNotificacion servicioNotificacion) 
+     public PrioritaryNotification(Notification notification) 
      {
-          super(servicioNotificacion);
+          super(notification);
      }
 
      @Override
@@ -15,7 +15,7 @@ public class PrioritaryNotification extends BaseNotification
      {
           System.out.println("\n---------> Enviando notificación proritaria <----------");
           
-          servicioNotificacion.enviarNotificacion(destinatario, "[URGENTE] " + mensaje);
+          notificationService.enviarNotificacion(destinatario, "[URGENTE] " + mensaje);
 
           System.out.println("------------------------ proritaria ------------------------ \n");
      }
@@ -23,6 +23,6 @@ public class PrioritaryNotification extends BaseNotification
      @Override
      public String obtenerServicio() 
      {
-          return "Notificación prioritaria vía " + servicioNotificacion.obtenerServicio();
+          return notificationService.obtenerServicio() + " prioritaria\n ";
      }
 }

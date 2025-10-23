@@ -23,13 +23,13 @@ public class EncriptedNotification extends BaseNotification
           }
           
           System.out.println("\n ************** Mensaje Encriptado ************** ");
-          servicioNotificacion.enviarNotificacion(destinatario, mensajeEncriptado);
+          notificationService.enviarNotificacion(destinatario, mensajeEncriptado);
           System.out.println();
      }
           
      @Override
      public String obtenerServicio() 
      {
-          return "Notificacion Encriptada";
+          return notificationService.obtenerServicio() + "con encriptacion\n";
      }
 }

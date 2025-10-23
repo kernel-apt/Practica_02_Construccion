@@ -1,7 +1,5 @@
 package design_patterns;
 
-import javax.management.Notification;
-
 /**
  * Añade funcionalidad de reintento a las notificaciones.
  */
@@ -23,7 +21,7 @@ public class RetryNotification extends BaseNotification
           {
                try 
                {
-                    servicioNotificacion.enviarNotificacion(destinatario, mensaje);
+                    notificationService.enviarNotificacion(destinatario, mensaje);
                     exito = true;
                } 
                catch (Exception e) 
@@ -41,6 +39,6 @@ public class RetryNotification extends BaseNotification
      @Override
      public String obtenerServicio() 
      {
-          return servicioNotificacion.obtenerServicio() + " con reintentos";
+          return notificationService.obtenerServicio() + " con reintentos\n";
      }
 }
