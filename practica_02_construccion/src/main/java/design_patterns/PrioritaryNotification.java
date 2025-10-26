@@ -5,7 +5,7 @@ package design_patterns;
  */
 public class PrioritaryNotification extends BaseNotification
 {
-     public PrioritaryNotification(Notification notification) 
+     public PrioritaryNotification(ServicioNotificacion notification) 
      {
           super(notification);
      }

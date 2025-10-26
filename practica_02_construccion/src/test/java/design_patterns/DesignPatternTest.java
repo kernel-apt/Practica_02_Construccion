@@ -188,7 +188,6 @@ public class DesignPatternTest {
         assertNotNull(packageManager.getMultiChannelNotifier());
         
         String output = outputStream.toString();
-        String output = outputStream.toString();
         assertTrue(output.contains("Alice"));
         assertTrue(output.contains("Book order"));
     }

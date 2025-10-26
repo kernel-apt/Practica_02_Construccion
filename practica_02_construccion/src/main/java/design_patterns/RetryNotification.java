@@ -5,7 +5,7 @@ package design_patterns;
  */
 public class RetryNotification extends BaseNotification
 {
-     public RetryNotification(Notification notification) 
+     public RetryNotification(ServicioNotificacion notification) 
      {
           super(notification);
      }

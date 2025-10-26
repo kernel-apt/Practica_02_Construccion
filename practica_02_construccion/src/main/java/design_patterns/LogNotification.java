@@ -8,7 +8,7 @@ import java.time.LocalDateTime;
  */
 public class LogNotification extends BaseNotification
 {
-     public LogNotification(Notification notification) 
+     public LogNotification(ServicioNotificacion notification) 
      {
           super(notification);
      }
