@@ -21,7 +21,10 @@ public class RetryNotification extends BaseNotification
           {
                try 
                {
-                    notificationService.enviarNotificacion(destinatario, mensaje);
+                    System.out.println("\n---------------- Intento de Envio de Notificación ---------------- ");
+                    System.out.println("\nIntento de Envio: " + (intentoActual + 1) + " de " + maxIntentos);
+                    notificationService.enviarNotificacion(destinatario, mensaje + " (Intento " + (intentoActual + 1) + ")");
+                    System.out.println("\n---------------- Intento de Envio de Notificación ---------------- ");
                     exito = true;
                } 
                catch (Exception e) 

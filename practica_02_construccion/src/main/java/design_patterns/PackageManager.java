@@ -41,6 +41,11 @@ public class PackageManager
           );
      }
 
+     public void setMultiChannelNotifier(MultiChannelNotifier multiChannelNotifier) 
+     {
+         this.multiChannelNotifier = multiChannelNotifier;
+     }
+
      public MultiChannelNotifier getMultiChannelNotifier() 
      {
           return multiChannelNotifier;
